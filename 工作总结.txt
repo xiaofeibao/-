@@ -1,0 +1,6 @@
+
+1.在destroy()方法里面写滚动条等的销毁方法，减少内存泄漏
+2.在页面或者组件的ts文件里注册service，不在module里注册service，减少内存泄漏
+3.调用superPublic里定义的接口，给入参字段赋值的时候如果没有自动提示字段，要去检查superPublic里字段定义是否正确
+4.在可能抛出错误的地方,使用try{}catch{}
+5.在vsCode里配置tslint代码格式化插件
